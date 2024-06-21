@@ -1,0 +1,6 @@
+# Ignore the 'out' folder
+out/
+
+
+# Ignore the 'trained_models' folder  
+trained_models/*.pth
