@@ -12,7 +12,7 @@ def mian():
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--no_class", default=2, type=int,  help="Specify the number of classes, remember the background")   # 2 binary: foreground (tumor) and background
-    parser.add_argument("--device", default=2, type=int)
+    parser.add_argument("--device", default=1, type=int)
     parser.add_argument("--epoch", default=0)
     parser.add_argument("--fold", default=0, type=int, help="Specify the fold for validation")
     parser.add_argument('--max_epoch', default=2000, type=int, help='Number of training epoches')
