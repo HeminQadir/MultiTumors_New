@@ -49,7 +49,7 @@ from tensorboardX import SummaryWriter
 def get_loader(train_files, val_files, args):
     train_transforms = Compose(
         [
-            LoadImaged(keys=["image", "label"], ensure_channel_first=True),
+            LoadImaged(keys=["image", "label", "embed"], ensure_channel_first=True),
             ScaleIntensityRanged(
                 keys=["image"],
                 a_min=args.a_min,
@@ -108,7 +108,7 @@ def get_loader(train_files, val_files, args):
 
     val_transforms = Compose(
         [
-            LoadImaged(keys=["image", "label"], ensure_channel_first=True),
+            LoadImaged(keys=["image", "label", "embed"], ensure_channel_first=True),
             ScaleIntensityRanged(keys=["image"], 
                                  a_min=args.a_min, 
                                  a_max=args.a_max, 

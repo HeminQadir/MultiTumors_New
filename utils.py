@@ -4,6 +4,7 @@ from tqdm import tqdm
 from monai.inferers import sliding_window_inference
 
 from monai.networks.nets import SwinUNETR, UNet
+from models.MyUNet import MyUNet
 from monai.networks.layers import Norm
 
 from monai.data import decollate_batch
@@ -17,7 +18,7 @@ def validation(model, validation_loader, post_label, post_pred, dice_metric, epo
     model.eval()
     with torch.no_grad():
         for batch in validation_loader:
-            val_inputs, val_labels, name = (batch["image"].to(device), batch["label"].to(device), batch['name'])
+            val_inputs, val_labels, name, text_embedding = (batch["image"].to(device), batch["label"].to(device), batch['name'], batch['embed'].to(device))
 
             found = any("Task06_Lung" in text or "Task10_Colon" in text for text in name)
             if found:
@@ -48,8 +49,8 @@ def train(model, train_loader, loss_function, optimizer, epoch, scaler, device):
     epoch_iterator = tqdm(train_loader, desc="Training (X / X Steps) (loss=X.X)", dynamic_ncols=True)
 
     for step, batch in enumerate(epoch_iterator):
-        x, y, name = (batch["image"].to(device), batch["label"].to(device), batch['name'])
-
+        x, y, name, text_embedding = (batch["image"].to(device), batch["label"].to(device), batch['name'], batch['embed'].to(device))
+        
         # Creating the binary masks 
         found = any("Task06_Lung" in text or "Task10_Colon" in text for text in name)
         if found:
@@ -87,14 +88,40 @@ def model_setup(args):
         model = SwinUNETR(
             img_size=(96, 96, 96),
             in_channels=1,
-            out_channels=args.no_class,
+            out_channels=args.no_class, 
             feature_size=48,
             #use_checkpoint=True,
-        ).to(args.device)
-    # elif args.model_name == 'unet':
-    #     pass 
+        )
+    
+    elif args.model_name == 'unet':
+        model = UNet(
+            spatial_dims=3,
+            in_channels=1,
+            out_channels=args.no_class,
+            channels=(16, 32, 64, 128, 256),
+            strides=(2, 2, 2, 2),
+            num_res_units=0,
+            norm=Norm.BATCH,
+        ) 
+
+    elif args.model_name == 'text_unet':
+        model = MyUNet(
+                spatial_dims=3,
+                in_channels=1,
+                out_channels=args.no_class,
+                channels=(16, 32, 64, 128, 256),
+                strides=(2, 2, 2, 2, 1),
+                num_res_units=0,
+                norm=Norm.BATCH
+        )
+
     else: 
-        raise ValueError("The model specified can not be found. Please select from the list [unet, resunet, swin].")
+        raise ValueError("The model specified can not be found. Please select from the list [unet, text_unet, resunet, swin].")
+
+    # send the model to cuda if available  
+    model = model.to(args.device)
+
+    args.save_directory = os.path.join(args.save_directory, args.model_name)
 
     #Load pre-trained weights
     if args.pretrain is not None:

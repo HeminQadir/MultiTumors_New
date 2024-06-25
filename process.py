@@ -19,11 +19,11 @@ from helper import *
 
 def process(args):
 
-    # check if this directory is available, if not make it 
-    make_dir(args.save_directory)
-
     # Setup the model 
     model = model_setup(args) 
+
+    # check if this directory is available, if not make it 
+    make_dir(args.save_directory)
 
     # Split the dataset into train and validation subsets 
     train_files, val_files = datafold_read(args) 

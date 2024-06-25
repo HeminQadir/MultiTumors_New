@@ -8,9 +8,9 @@ from process import process
 print_config()
 
 
-def mian():
-    parser = argparse.ArgumentParser()
+def mian(): 
 
+    parser = argparse.ArgumentParser()
     parser.add_argument("--no_class", default=2, type=int,  help="Specify the number of classes, remember the background")   # 2 binary: foreground (tumor) and background
     parser.add_argument("--device", default=1, type=int)
     parser.add_argument("--epoch", default=0)

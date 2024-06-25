@@ -5,91 +5,91 @@
             "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_011.nii.gz",
             "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_011.nii.gz",
             "name": "Task10_Colon/imagesTr/colon_011",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
         },
         {
             "fold": 0,
             "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_115.nii.gz",
             "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_115.nii.gz",
             "name": "Task10_Colon/imagesTr/colon_115",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
         },
         {
             "fold": 0,
             "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_207.nii.gz",
             "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_207.nii.gz",
             "name": "Task10_Colon/imagesTr/colon_207",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
         },
         {
             "fold": 1,
-            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_007.nii.gz",
-            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_007.nii.gz",
-            "name": "Task10_Colon/imagesTr/colon_007",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
+            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_131.nii.gz",
+            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_131.nii.gz",
+            "name": "Task10_Colon/imagesTr/colon_131",
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
         },
         {
             "fold": 1,
-            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_122.nii.gz",
-            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_122.nii.gz",
-            "name": "Task10_Colon/imagesTr/colon_122",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
+            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_069.nii.gz",
+            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_069.nii.gz",
+            "name": "Task10_Colon/imagesTr/colon_069",
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
         },
         {
             "fold": 1,
-            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_072.nii.gz",
-            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_072.nii.gz",
-            "name": "Task10_Colon/imagesTr/colon_072",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
+            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_092.nii.gz",
+            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_092.nii.gz",
+            "name": "Task10_Colon/imagesTr/colon_092",
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
         },
         {
             "fold": 2,
-            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_103.nii.gz",
-            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_103.nii.gz",
-            "name": "Task10_Colon/imagesTr/colon_103",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
+            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_053.nii.gz",
+            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_053.nii.gz",
+            "name": "Task10_Colon/imagesTr/colon_053",
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
         },
         {
             "fold": 2,
-            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_218.nii.gz",
-            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_218.nii.gz",
-            "name": "Task10_Colon/imagesTr/colon_218",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
+            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_213.nii.gz",
+            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_213.nii.gz",
+            "name": "Task10_Colon/imagesTr/colon_213",
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
         },
         {
             "fold": 3,
             "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_111.nii.gz",
             "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_111.nii.gz",
             "name": "Task10_Colon/imagesTr/colon_111",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
         },
         {
             "fold": 3,
-            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_168.nii.gz",
-            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_168.nii.gz",
-            "name": "Task10_Colon/imagesTr/colon_168",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
+            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_192.nii.gz",
+            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_192.nii.gz",
+            "name": "Task10_Colon/imagesTr/colon_192",
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
+        },
+        {
+            "fold": 3,
+            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_127.nii.gz",
+            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_127.nii.gz",
+            "name": "Task10_Colon/imagesTr/colon_127",
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
         },
         {
             "fold": 4,
-            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_141.nii.gz",
-            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_141.nii.gz",
-            "name": "Task10_Colon/imagesTr/colon_141",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
+            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_032.nii.gz",
+            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_032.nii.gz",
+            "name": "Task10_Colon/imagesTr/colon_032",
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
         },
         {
             "fold": 4,
-            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_203.nii.gz",
-            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_203.nii.gz",
-            "name": "Task10_Colon/imagesTr/colon_203",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
-        },
-        {
-            "fold": 4,
-            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_139.nii.gz",
-            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_139.nii.gz",
-            "name": "Task10_Colon/imagesTr/colon_139",
-            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Spleen_Embedding.nii.gz"
+            "image": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/imagesTr/colon_154.nii.gz",
+            "label": "/media/samsung_ssd_1/Medical_Dataset/NewDataSet/Task10_Colon/labelsTr/colon_154.nii.gz",
+            "name": "Task10_Colon/imagesTr/colon_154",
+            "embed": "/home/hemin/MultiOrganSegmentation/Text_Embeddings/Colon_Tumor_Embedding.nii.gz"
         }
     ]
 }
