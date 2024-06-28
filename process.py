@@ -53,6 +53,9 @@ def process(args):
             ave_loss = train(args, model, train_loader, loss_function, optimizer, scaler)
             writer.add_scalar('train_dice_loss', ave_loss, args.epoch)
 
+            if (args.epoch % args.store_num == 0 and args.epoch != 0):
+                    torch.save(model.state_dict(), os.path.join(args.save_directory, "model_epoch_"+str(args.epoch)+"_.pth"))
+
             # Validation 
             if (args.epoch) % args.val_interval == 0:
                 epoch_iterator_val = tqdm(val_loader, desc="Validate (X / X Epoch) (dice=X.X)", dynamic_ncols=True)
@@ -86,7 +89,7 @@ def process(args):
 
 
     torch.save(model.state_dict(), os.path.join(args.save_directory, "last_epoch_model.pth"))
-    print(f"train completed, best_metric: {dice_val_best:.4f} " f"at iteration: {args.epoch}")
+    print(f"train completed, best_metric: {dice_val_best:.4f}" f"at iteration: {args.epoch}")
 
 
 

@@ -23,6 +23,7 @@ def mian():
     parser.add_argument('--dataset_json', default='./dataset/dataset_json_files/training_data_all.json', help='data root path')
     parser.add_argument('--save_directory', default='./trained_models', help='path to save the model')
     parser.add_argument('--model_name', default='unet', help='backbone [swinunetr or unet or dints or unetpp]')
+    parser.add_argument('--store_num', default=10, type=int, help='Store model how often, epoch based')
 
     # Things for dataloader 
     parser.add_argument('--num_workers', default=8, type=int, help='workers numebr for DataLoader')
