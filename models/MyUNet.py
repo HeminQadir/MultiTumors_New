@@ -14,7 +14,7 @@ from monai.utils import alias, export
 import inspect
 
 @export("monai.networks.nets")
-@alias("Unet")
+@alias("MyUnet")
 class MyUNet(nn.Module):
     """
     Enhanced version of UNet which has residual units implemented with the ResidualUnit class.
@@ -63,25 +63,23 @@ class MyUNet(nn.Module):
 
     Examples::
 
-        from monai.networks.nets import UNet
-
         # 3 layer network with down/upsampling by a factor of 2 at each layer with 2-convolution residual units
-        net = UNet(
+        net = MyUNet(
             spatial_dims=2,
             in_channels=1,
             out_channels=1,
             channels=(4, 8, 16),
-            strides=(2, 2),
+            strides=(2, 2, 1),
             num_res_units=2
         )
 
         # 5 layer network with simple convolution/normalization/dropout/activation blocks defining the layers
-        net=UNet(
+        net = MyUNet(
             spatial_dims=2,
             in_channels=1,
             out_channels=1,
             channels=(4, 8, 16, 32, 64),
-            strides=(2, 2, 2, 2),
+            strides=(2, 2, 2, 2, 1),
         )
 
     .. deprecated:: 0.6.0

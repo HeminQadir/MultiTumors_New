@@ -12,7 +12,7 @@ def mian():
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--no_class", default=2, type=int,  help="Specify the number of classes, remember the background")   # 2 binary: foreground (tumor) and background
-    parser.add_argument("--device", default=1, type=int)
+    parser.add_argument("--device", default=2, type=int)
     parser.add_argument("--epoch", default=0)
     parser.add_argument("--fold", default=0, type=int, help="Specify the fold for validation")
     parser.add_argument('--max_epoch', default=2000, type=int, help='Number of training epoches')
@@ -63,13 +63,6 @@ if __name__ == "__main__":
     mian()
 
 # python train.py --model_name swin --cache_dataset 
-
-# parser.add_argument('--dist', dest='dist', type=bool, default=False,
-#                     help='distributed training or not')
-# parser.add_argument("--local_rank", type=int)
-# parser.add_argument('--store_num', default=50, type=int, help='Store model how often')
-# parser.add_argument('--warmup_epoch', default=100, type=int, help='number of warmup epochs')
-# parser.add_argument('--phase', default='train', help='traclearin or validation or test')
-# parser.add_argument('--uniform_sample', action="store_true", default=False, help='whether utilize uniform sample strategy')
-# parser.add_argument('--trans_encoding', default='word_embedding', 
-#                     help='the type of encoding: rand_embedding or word_embedding')
+# python train.py --model_name unet --cache_dataset 
+# python train.py --device 0 --model_name my_unet --cache_dataset --dataset_json ./dataset/dataset_json_files/training_data_debug.json
+# python train.py --device 2 --model_name text_unet --cache_dataset --dataset_json ./dataset/dataset_json_files/training_data_debug.json

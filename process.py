@@ -13,7 +13,7 @@ warnings.filterwarnings("ignore")
 import torch
 from tensorboardX import SummaryWriter
 from dataset.dataloader import get_loader 
-from utils import *
+from dataset.utils.utils import *
 from helper import * 
 
 
@@ -50,17 +50,17 @@ def process(args):
 
         try: 
             # Traininig 
-            ave_loss = train(model, train_loader, loss_function, optimizer, args.epoch, scaler, args.device)
+            ave_loss = train(args, model, train_loader, loss_function, optimizer, scaler)
             writer.add_scalar('train_dice_loss', ave_loss, args.epoch)
 
             # Validation 
             if (args.epoch) % args.val_interval == 0:
                 epoch_iterator_val = tqdm(val_loader, desc="Validate (X / X Epoch) (dice=X.X)", dynamic_ncols=True)
                 print("starting the validation phase")
-                dice_val = validation(model, epoch_iterator_val, post_label, post_pred, dice_metric, args.epoch, args.device) 
+                dice_val = validation(args, model, epoch_iterator_val, post_label, post_pred, dice_metric) 
 
                 epoch_iterator_train = tqdm(subset_loader, desc="Train validate (X / X Epoch) (dice=X.X)", dynamic_ncols=True)
-                metric_train = validation(model, epoch_iterator_train, post_label, post_pred, dice_metric, args.epoch, args.device) 
+                metric_train = validation(args, model, epoch_iterator_train, post_label, post_pred, dice_metric) 
 
                 if dice_val > dice_val_best:
                     dice_val_best = dice_val
